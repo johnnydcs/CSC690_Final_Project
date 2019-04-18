@@ -4,13 +4,16 @@
 # Milestone 1 - Proposal    
 4/11/19                   
 # --------------------------
+Graduation eligibility checking application; determines if student's current/completed courses qualify the student for major and minor graduation.
 # Must have features:
-# * (hours)
-# * (hours)
-# * (hours)
-# * (hours)
-# * (hours)
-# * (hours)
+# * Store student courses
+# * Add course drop down bar
+# * Remove course from student data
+# * Display major courses required
+# * Display minor courses required
+# * Display current courses
+# * Major is eligibile
+# * Minor is eligibile
 
 # Nice to have features:
 # * (hours)
