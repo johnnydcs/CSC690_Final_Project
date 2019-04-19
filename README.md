@@ -16,10 +16,8 @@ Graduation eligibility checking application; determines if student's current/com
 # * Minor is eligibile
 
 # Nice to have features:
-# * (hours)
-# * (hours)
-# * (hours)
-# * (hours)
+# * Utilisation of Firebase for data storage (hours)
+# * Display ideal courses flow chart
 
 # --------------------------
 # Milestone 2 - Prototype   
