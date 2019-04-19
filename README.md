@@ -4,7 +4,10 @@
 # Milestone 1 - Proposal    
 4/11/19                   
 # --------------------------
+GatorGrad Helper
+
 Graduation eligibility checking application; determines if student's current/completed courses qualify the student for major and minor graduation.
+
 # Must have features:
 # * Store student courses
 # * Add course drop down bar
