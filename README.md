@@ -22,6 +22,8 @@ Graduation eligibility checking application; determines if student's current/com
 # * Utilisation of Firebase for data storage (hours)
 # * Display ideal courses flow chart
 
+# Code Review by Nelson Mei
+
 # --------------------------
 # Milestone 2 - Prototype   
 4/18/19                   
