@@ -1,0 +1,470 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		76408A2C228D32E200E0696E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76408A2B228D32E200E0696E /* AppDelegate.swift */; };
+		76408A2E228D32E200E0696E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76408A2D228D32E200E0696E /* ViewController.swift */; };
+		76408A31228D32E200E0696E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76408A2F228D32E200E0696E /* Main.storyboard */; };
+		76408A33228D32E200E0696E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76408A32228D32E200E0696E /* Assets.xcassets */; };
+		76408A36228D32E200E0696E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76408A34228D32E200E0696E /* LaunchScreen.storyboard */; };
+		76408A41228D32E200E0696E /* GatorGradsHelperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76408A40228D32E200E0696E /* GatorGradsHelperTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		76408A3D228D32E200E0696E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 76408A20228D32E200E0696E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 76408A27228D32E200E0696E;
+			remoteInfo = GatorGradsHelper;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		76408A28228D32E200E0696E /* GatorGradsHelper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GatorGradsHelper.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		76408A2B228D32E200E0696E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		76408A2D228D32E200E0696E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		76408A30228D32E200E0696E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		76408A32228D32E200E0696E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		76408A35228D32E200E0696E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		76408A37228D32E200E0696E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		76408A3C228D32E200E0696E /* GatorGradsHelperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GatorGradsHelperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		76408A40228D32E200E0696E /* GatorGradsHelperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GatorGradsHelperTests.swift; sourceTree = "<group>"; };
+		76408A42228D32E200E0696E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		76408A25228D32E200E0696E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76408A39228D32E200E0696E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		76408A1F228D32E200E0696E = {
+			isa = PBXGroup;
+			children = (
+				76408A2A228D32E200E0696E /* GatorGradsHelper */,
+				76408A3F228D32E200E0696E /* GatorGradsHelperTests */,
+				76408A29228D32E200E0696E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		76408A29228D32E200E0696E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				76408A28228D32E200E0696E /* GatorGradsHelper.app */,
+				76408A3C228D32E200E0696E /* GatorGradsHelperTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		76408A2A228D32E200E0696E /* GatorGradsHelper */ = {
+			isa = PBXGroup;
+			children = (
+				76408A2B228D32E200E0696E /* AppDelegate.swift */,
+				76408A2D228D32E200E0696E /* ViewController.swift */,
+				76408A2F228D32E200E0696E /* Main.storyboard */,
+				76408A32228D32E200E0696E /* Assets.xcassets */,
+				76408A34228D32E200E0696E /* LaunchScreen.storyboard */,
+				76408A37228D32E200E0696E /* Info.plist */,
+			);
+			path = GatorGradsHelper;
+			sourceTree = "<group>";
+		};
+		76408A3F228D32E200E0696E /* GatorGradsHelperTests */ = {
+			isa = PBXGroup;
+			children = (
+				76408A40228D32E200E0696E /* GatorGradsHelperTests.swift */,
+				76408A42228D32E200E0696E /* Info.plist */,
+			);
+			path = GatorGradsHelperTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		76408A27228D32E200E0696E /* GatorGradsHelper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 76408A45228D32E200E0696E /* Build configuration list for PBXNativeTarget "GatorGradsHelper" */;
+			buildPhases = (
+				76408A24228D32E200E0696E /* Sources */,
+				76408A25228D32E200E0696E /* Frameworks */,
+				76408A26228D32E200E0696E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GatorGradsHelper;
+			productName = GatorGradsHelper;
+			productReference = 76408A28228D32E200E0696E /* GatorGradsHelper.app */;
+			productType = "com.apple.product-type.application";
+		};
+		76408A3B228D32E200E0696E /* GatorGradsHelperTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 76408A48228D32E200E0696E /* Build configuration list for PBXNativeTarget "GatorGradsHelperTests" */;
+			buildPhases = (
+				76408A38228D32E200E0696E /* Sources */,
+				76408A39228D32E200E0696E /* Frameworks */,
+				76408A3A228D32E200E0696E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				76408A3E228D32E200E0696E /* PBXTargetDependency */,
+			);
+			name = GatorGradsHelperTests;
+			productName = GatorGradsHelperTests;
+			productReference = 76408A3C228D32E200E0696E /* GatorGradsHelperTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		76408A20228D32E200E0696E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Johnny Huynh";
+				TargetAttributes = {
+					76408A27228D32E200E0696E = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					76408A3B228D32E200E0696E = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 76408A27228D32E200E0696E;
+					};
+				};
+			};
+			buildConfigurationList = 76408A23228D32E200E0696E /* Build configuration list for PBXProject "GatorGradsHelper" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 76408A1F228D32E200E0696E;
+			productRefGroup = 76408A29228D32E200E0696E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				76408A27228D32E200E0696E /* GatorGradsHelper */,
+				76408A3B228D32E200E0696E /* GatorGradsHelperTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		76408A26228D32E200E0696E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76408A36228D32E200E0696E /* LaunchScreen.storyboard in Resources */,
+				76408A33228D32E200E0696E /* Assets.xcassets in Resources */,
+				76408A31228D32E200E0696E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76408A3A228D32E200E0696E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		76408A24228D32E200E0696E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76408A2E228D32E200E0696E /* ViewController.swift in Sources */,
+				76408A2C228D32E200E0696E /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76408A38228D32E200E0696E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76408A41228D32E200E0696E /* GatorGradsHelperTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		76408A3E228D32E200E0696E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 76408A27228D32E200E0696E /* GatorGradsHelper */;
+			targetProxy = 76408A3D228D32E200E0696E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		76408A2F228D32E200E0696E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				76408A30228D32E200E0696E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		76408A34228D32E200E0696E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				76408A35228D32E200E0696E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		76408A43228D32E200E0696E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		76408A44228D32E200E0696E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		76408A46228D32E200E0696E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = GatorGradsHelper/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.SFSU-916680211.GatorGradsHelper";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		76408A47228D32E200E0696E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = GatorGradsHelper/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.SFSU-916680211.GatorGradsHelper";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		76408A49228D32E200E0696E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GatorGradsHelperTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.SFSU-916680211.GatorGradsHelperTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GatorGradsHelper.app/GatorGradsHelper";
+			};
+			name = Debug;
+		};
+		76408A4A228D32E200E0696E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GatorGradsHelperTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.SFSU-916680211.GatorGradsHelperTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GatorGradsHelper.app/GatorGradsHelper";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		76408A23228D32E200E0696E /* Build configuration list for PBXProject "GatorGradsHelper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				76408A43228D32E200E0696E /* Debug */,
+				76408A44228D32E200E0696E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		76408A45228D32E200E0696E /* Build configuration list for PBXNativeTarget "GatorGradsHelper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				76408A46228D32E200E0696E /* Debug */,
+				76408A47228D32E200E0696E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		76408A48228D32E200E0696E /* Build configuration list for PBXNativeTarget "GatorGradsHelperTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				76408A49228D32E200E0696E /* Debug */,
+				76408A4A228D32E200E0696E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 76408A20228D32E200E0696E /* Project object */;
+}
