@@ -18,8 +18,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Gator Grad Helper" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="scR-4q-ONx">
-                                <rect key="frame" x="16" y="50" width="343" height="24"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gator Grad Helper" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="scR-4q-ONx">
+                                <rect key="frame" x="32" y="50" width="311" height="24"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <color key="textColor" red="0.0" green="0.55798656089999998" blue="0.1440506996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
@@ -77,8 +77,10 @@
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="XRZ-Ii-wdu" secondAttribute="trailing" constant="35" id="9qE-4k-hIa"/>
                             <constraint firstItem="scR-4q-ONx" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="B2V-Yg-CYf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="scR-4q-ONx" secondAttribute="trailing" constant="32" id="Maq-Mn-45B"/>
                             <constraint firstItem="XRZ-Ii-wdu" firstAttribute="top" secondItem="scR-4q-ONx" secondAttribute="bottom" constant="50" id="Xcu-Ba-sGZ"/>
                             <constraint firstItem="XRZ-Ii-wdu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="35" id="XzW-m0-Ke7"/>
+                            <constraint firstItem="scR-4q-ONx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="Y32-UN-HpP"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
