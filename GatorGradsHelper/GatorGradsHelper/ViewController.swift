@@ -16,10 +16,30 @@ class ViewController: UIViewController {
     var Courses = ["CompSci", "Math", "English"]
     
     @IBAction func SelectButtonDrop(_ sender: Any) {
+        
+        if tableView.isHidden {
+            animate(toggle: true)
+        } else {
+            animate(toggle: false)
+        }
+    }
+    
+    func animate(toggle: Bool) {
+        if (toggle) {
+            UIView.animate(withDuration: 0.3) {
+                self.tableView.isHidden = false
+            }
+        } else {
+            UIView.animate(withDuration: 0.3) {
+                self.tableView.isHidden = true
+            }
+        }
+        
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableView.isHidden = true
         // Do any additional setup after loading the view, typically from a nib.
     }
 }
@@ -36,5 +56,8 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         return cell
     }
     
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        SelectButton.setTitle("\(Courses[indexPath.row])", for: .normal)
+        animate(toggle: false)
+    }
 }

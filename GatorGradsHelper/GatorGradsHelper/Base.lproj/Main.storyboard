@@ -19,13 +19,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Gator Grad Helper" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="scR-4q-ONx">
-                                <rect key="frame" x="16" y="58" width="343" height="21"/>
+                                <rect key="frame" x="16" y="50" width="343" height="24"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <color key="textColor" red="0.0" green="0.55798656089999998" blue="0.1440506996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="XRZ-Ii-wdu">
-                                <rect key="frame" x="35" y="87" width="305" height="190"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="XRZ-Ii-wdu">
+                                <rect key="frame" x="35" y="124" width="305" height="190"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hBn-ym-XBB">
                                         <rect key="frame" x="0.0" y="0.0" width="305" height="40"/>
@@ -76,6 +76,7 @@
                         <color key="backgroundColor" red="0.95204408129999996" green="1" blue="0.90472502619999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="XRZ-Ii-wdu" secondAttribute="trailing" constant="35" id="9qE-4k-hIa"/>
+                            <constraint firstItem="scR-4q-ONx" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="B2V-Yg-CYf"/>
                             <constraint firstItem="XRZ-Ii-wdu" firstAttribute="top" secondItem="scR-4q-ONx" secondAttribute="bottom" constant="50" id="Xcu-Ba-sGZ"/>
                             <constraint firstItem="XRZ-Ii-wdu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="35" id="XzW-m0-Ke7"/>
                         </constraints>
