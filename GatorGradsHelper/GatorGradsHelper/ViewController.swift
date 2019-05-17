@@ -30,11 +30,11 @@ class ViewController: UIViewController {
         {
             if course != currentCourse {
                 usersCourses.append(currentCourse)
+                print("Appended " + currentCourse + " to user's courses\n")
                 break
             }
         }
     }
-    
     
     @IBAction func CheckAction(_ sender: Any) {
         
