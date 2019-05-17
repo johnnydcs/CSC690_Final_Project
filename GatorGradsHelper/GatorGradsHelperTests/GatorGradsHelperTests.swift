@@ -2,7 +2,7 @@
 //  GatorGradsHelperTests.swift
 //  GatorGradsHelperTests
 //
-//  Created by Johnny Huynh on 5/15/19.
+//  Created by Johnny Huynh on 5/1/19.
 //  Copyright © 2019 Johnny Huynh. All rights reserved.
 //
 

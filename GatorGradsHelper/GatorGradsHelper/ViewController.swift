@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  GatorGradsHelper
 //
-//  Created by Johnny Huynh on 5/15/19.
+//  Created by Johnny Huynh on 5/1/19.
 //  Copyright © 2019 Johnny Huynh. All rights reserved.
 //
 
@@ -12,11 +12,35 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var SelectButton: UIButton!
     
-    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var subjectTableView: UITableView!
     
     @IBOutlet weak var SelectNumButton: UIButton!
     
     @IBOutlet weak var tableNumView: UITableView!
+    
+    @IBOutlet weak var AddCourseButton: UIButton!
+    
+    @IBOutlet weak var CheckEligibilty: UIButton!
+    
+    @IBAction func AddThisCourseAction(_ sender: Any) {
+        
+        let currentCourse = AddThisSubject + AddThisCourseNumber
+        
+        for course in usersCourses
+        {
+            if course != currentCourse {
+                usersCourses.append(currentCourse)
+                break
+            }
+        }
+    }
+    
+    
+    @IBAction func CheckAction(_ sender: Any) {
+        
+    }
+    
+    var usersCourses: [String] = []
     
     var Subjects = ["Computer Science", "Math", "English", "Psychology", "Business"]
     
@@ -27,7 +51,7 @@ class ViewController: UIViewController {
     
     @IBAction func SelectButtonDrop(_ sender: Any) {
         
-        if tableView.isHidden {
+        if subjectTableView.isHidden {
             animate(toggle: true)
         } else {
             animate(toggle: false)
@@ -46,11 +70,11 @@ class ViewController: UIViewController {
     func animate(toggle: Bool) {
         if (toggle) {
             UIView.animate(withDuration: 0.3) {
-                self.tableView.isHidden = false
+                self.subjectTableView.isHidden = false
             }
         } else {
             UIView.animate(withDuration: 0.3) {
-                self.tableView.isHidden = true
+                self.subjectTableView.isHidden = true
             }
         }
         
@@ -71,50 +95,58 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        tableView.isHidden = true
+        subjectTableView.isHidden = true
         tableNumView.isHidden = true;
-        // Do any additional setup after loading the view, typically from a nib.
     }
 }
 
 extension ViewController: UITableViewDelegate, UITableViewDataSource {
     
-    // Start of Course Subject List Only
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return Subjects.count
+        
+        if (tableView == subjectTableView)
+        {
+            return Subjects.count
+        }
+        
+        else
+        {
+            return CourseNumbers.count
+        }
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        cell.textLabel?.text = Subjects[indexPath.row]
-        return cell
+        
+        if (tableView == subjectTableView)
+        {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+            cell.textLabel?.text = Subjects[indexPath.row]
+                return cell
+        }
+            
+        else
+        {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+            cell.textLabel?.text = CourseNumbers[indexPath.row]
+            return cell
+        }
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        SelectButton.setTitle("\(Subjects[indexPath.row])", for: .normal)
-        AddThisSubject = Subjects[indexPath.row]
-        AddThisCourseNumber = CourseNumbers[indexPath.row]
-        animate(toggle: false)
+        if (tableView == subjectTableView)
+        {
+            SelectButton.setTitle("\(Subjects[indexPath.row])", for: .normal)
+            AddThisSubject = Subjects[indexPath.row]
+            AddThisCourseNumber = CourseNumbers[indexPath.row]
+            animate(toggle: false)
+        }
+        
+        else
+        {
+            SelectNumButton.setTitle("\(CourseNumbers[indexPath.row])", for: .normal)
+            AddThisSubject = Subjects[indexPath.row]
+            AddThisCourseNumber = CourseNumbers[indexPath.row]
+            animate2(toggle: false)
+        }
     }
-    // End of Course Subject List
-    
-    // Start of Course Number List Only
-    func tableNumView(_ tableNumView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return CourseNumbers.count
-    }
-    
-    func tableNumView(_ tableNumView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableNumView.dequeueReusableCell(withIdentifier: "cell2", for: indexPath)
-        cell.textLabel?.text = CourseNumbers[indexPath.row]
-        return cell
-    }
-    
-    func tableNumView(_ tableNumView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        SelectNumButton.setTitle("\(CourseNumbers[indexPath.row])", for: .normal)
-        AddThisSubject = Subjects[indexPath.row]
-        AddThisCourseNumber = CourseNumbers[indexPath.row]
-        animate(toggle: false)
-    }
-    // End of Course Number List
-    
 }

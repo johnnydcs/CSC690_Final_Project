@@ -66,14 +66,14 @@
                                             </tableViewCell>
                                         </prototypes>
                                         <connections>
-                                            <outlet property="dataSource" destination="BYZ-38-t0r" id="iF8-ZI-cwv"/>
+                                            <outlet property="dataSource" destination="BYZ-38-t0r" id="acW-RP-unZ"/>
                                             <outlet property="delegate" destination="BYZ-38-t0r" id="Xva-cG-YsN"/>
                                         </connections>
                                     </tableView>
                                 </subviews>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="jm7-D6-ieT">
-                                <rect key="frame" x="35" y="414" width="305" height="189"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="jm7-D6-ieT">
+                                <rect key="frame" x="35" y="364" width="305" height="190"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jOE-zY-CnY">
                                         <rect key="frame" x="0.0" y="0.0" width="305" height="40"/>
@@ -86,11 +86,14 @@
                                             <action selector="SelectNumButtonDrop:" destination="BYZ-38-t0r" eventType="touchUpInside" id="d1i-Sm-Cif"/>
                                         </connections>
                                     </button>
-                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="E1x-2m-PWE">
-                                        <rect key="frame" x="0.0" y="40" width="305" height="149"/>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="E1x-2m-PWE">
+                                        <rect key="frame" x="0.0" y="40" width="305" height="150"/>
                                         <color key="backgroundColor" red="1" green="0.91764705879999997" blue="0.70196078429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="150" id="4PV-X9-0Np"/>
+                                        </constraints>
                                         <prototypes>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell2" textLabel="esl-Zi-uis" style="IBUITableViewCellStyleDefault" id="F79-Qj-4Ed">
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" textLabel="esl-Zi-uis" style="IBUITableViewCellStyleDefault" id="F79-Qj-4Ed">
                                                 <rect key="frame" x="0.0" y="28" width="305" height="44"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="F79-Qj-4Ed" id="2Tj-xt-2PL">
@@ -111,10 +114,38 @@
                                         </prototypes>
                                         <connections>
                                             <outlet property="dataSource" destination="BYZ-38-t0r" id="TLI-Jk-F1I"/>
+                                            <outlet property="delegate" destination="BYZ-38-t0r" id="d3Q-Ae-Jt2"/>
                                         </connections>
                                     </tableView>
                                 </subviews>
                             </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" spacing="85" translatesAutoresizingMaskIntoConstraints="NO" id="KPf-4q-sLP">
+                                <rect key="frame" x="35" y="617" width="308" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DXs-sx-jke">
+                                        <rect key="frame" x="0.0" y="0.0" width="114" height="30"/>
+                                        <color key="backgroundColor" red="0.67447679449791065" green="1" blue="0.99021799897622464" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <state key="normal" title="Add This Course"/>
+                                        <connections>
+                                            <action selector="AddThisCourseAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Kwh-ME-JHA"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="01H-6R-unv">
+                                        <rect key="frame" x="199" y="0.0" width="109" height="30"/>
+                                        <color key="backgroundColor" red="1" green="0.87736969340290039" blue="0.6989589098193949" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <state key="normal" title="Check Eligibility"/>
+                                        <connections>
+                                            <action selector="CheckAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="75m-5w-trD"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <imageView clipsSubviews="YES" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="SFSU Gators" highlightedImage="SFSU Gators" translatesAutoresizingMaskIntoConstraints="NO" id="o61-A1-biq">
+                                <rect key="frame" x="121" y="509" width="133" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.95204408129999996" green="1" blue="0.90472502619999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.95204408129999996" green="1" blue="0.90472502619999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
@@ -131,10 +162,12 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="AddCourseButton" destination="DXs-sx-jke" id="b5l-hR-gYP"/>
+                        <outlet property="CheckEligibilty" destination="01H-6R-unv" id="ecP-31-5v0"/>
                         <outlet property="SelectButton" destination="hBn-ym-XBB" id="1di-Wa-47I"/>
                         <outlet property="SelectNumButton" destination="jOE-zY-CnY" id="Qtg-h1-Uws"/>
+                        <outlet property="subjectTableView" destination="dLB-wl-PVh" id="A5E-oz-Joh"/>
                         <outlet property="tableNumView" destination="E1x-2m-PWE" id="LKD-Rr-BGg"/>
-                        <outlet property="tableView" destination="dLB-wl-PVh" id="6Dt-hS-dOX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -142,4 +175,7 @@
             <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="SFSU Gators" width="133" height="100"/>
+    </resources>
 </document>
